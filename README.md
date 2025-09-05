@@ -58,8 +58,7 @@ pgsql
 
 Connection strengthened. Community enriched.
 📸 Example Output
-pgsql
-Copy code
+
 Welcome to the Ubuntu Image Fetcher
 A tool for mindfully collecting images from the web
 
