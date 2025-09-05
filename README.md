@@ -1,49 +1,80 @@
-# 🌍 Ubuntu Image Fetcher
+🌍 Ubuntu-Inspired Image Fetcher
 
-> "I am because we are" – Ubuntu Philosophy  
+“I am because we are” – Ubuntu Philosophy
 
-This project is a **Python-based image downloader** inspired by Ubuntu’s principles of **community, respect, and sharing**.  
-It fetches images from the web, saves them locally, and organizes them in a `Fetched_Images` directory.  
+This project is a Python script that demonstrates how to fetch images from the internet in a way that reflects Ubuntu values of community, respect, sharing, and practicality.
 
----
+The program asks the user for one or more image URLs, downloads them, and stores them in a folder called Fetched_Images.
+It ensures that only valid images are saved, prevents duplicates, and handles errors gracefully without crashing.
 
-## 🚀 Features
-- Fetches images from any valid URL
-- Creates a `Fetched_Images/` directory if it doesn’t exist
-- Validates **HTTP status codes** and **Content-Type**
-- Prevents **duplicate downloads** using content hashing
-- Allows **multiple URLs** at once
-- Handles errors gracefully
+✨ Program Highlights
 
----
+Community → connects to global resources by fetching images from the web.
 
-## 📂 File Structure
+Respect → handles errors such as broken links or invalid URLs politely.
 
+Sharing → organizes all images into one accessible directory.
+
+Practicality → creates a real tool that can be reused whenever images need to be collected.
+
+📌 Features Implemented
+
+Creates a Fetched_Images folder automatically if it doesn’t exist.
+
+Validates URLs and ensures that the file is really an image (checks Content-Type).
+
+Generates filenames based on content to avoid overwriting or duplicates.
+
+Allows multiple image URLs to be provided at once.
+
+Catches and reports connection problems without stopping the program.
+
+📂 Repository Structure
 Ubuntu_Requests/
 │
-├── ubuntu_fetcher.py # Main script
-└── README.md # Documentation
----
+├── ubuntu_fetcher.py   # Main script for fetching images
+├── requirements.txt    # Dependencies (requests library)
+└── README.md           # Documentation
 
-## ▶️ Usage
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Ubuntu_Requests.git
-   cd Ubuntu_Requests
+▶️ How to Use the Program
 
-   python3 ubuntu_fetcher.py
+Clone the repository to your computer:
 
-   Example interaction:
+git clone https://github.com/YOUR-USERNAME/Ubuntu_Requests.git
+cd Ubuntu_Requests
+
+
+Install the required Python library:
+
+pip install -r requirements.txt
+
+
+Run the program:
+
+python3 ubuntu_fetcher.py
+
+
+Provide one or more image URLs when prompted:
 
 Welcome to the Ubuntu Image Fetcher
 A tool for mindfully collecting images from the web
 
-Please enter one or more image URLs (separated by spaces): https://example.com/ubuntu.jpg
-✓ Successfully fetched: 3f2a8c1b_ubuntu.jpg
-✓ Image saved to Fetched_Images/3f2a8c1b_ubuntu.jpg
+Please enter one or more image URLs (separated by spaces): https://example.com/wallpaper.jpg
+✓ Successfully fetched: ab34d2c1_wallpaper.jpg
+✓ Image saved to Fetched_Images/ab34d2c1_wallpaper.jpg
 
 Connection strengthened. Community enriched.
-Requirements
+
+
+Running the Script in Terminal
+
+
+Fetched Images Stored in Folder
+
+
+(You can replace these placeholders with your own screenshots after running the program.)
+
+⚙️ Requirements
 
 Python 3.x
 
@@ -51,42 +82,22 @@ Libraries:
 
 requests
 
-Install dependencies with:
+To install dependencies manually:
 
 pip install requests
 
-✨ Challenge Features
+🌐 Extra Improvements (Challenge Tasks)
 
-Multiple URLs supported
+Support for downloading multiple images at once.
 
-Content-Type checked (ensures only images are saved)
+Duplicate detection using file hashing.
 
-Duplicate prevention via hashing
+Validation of HTTP headers to confirm content type before saving.
 
-Graceful error handling for network issues
+Error messages that guide the user instead of breaking execution.
 
-"A person is a person through other persons." – Ubuntu Philosophy
+💡 Reflection
 
+This assignment highlights how programming can be connected to philosophy. Just as Ubuntu teaches that a person is a person through other persons, this tool demonstrates that a program is useful through its interaction with resources created and shared by others.
 
----
-
-### **📜 requirements.txt**
-
-
-requests
-
-
----
-
-👉 Steps for you:  
-
-1. On your computer, create a folder `Ubuntu_Requests`  
-2. Inside it, paste the **3 files** above (`ubuntu_fetcher.py`, `README.md`, `requirements.txt`)  
-3. Push to GitHub with:  
-```bash
-git init
-git add .
-git commit -m "Ubuntu Image Fetcher Assignment"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/Ubuntu_Requests.git
-git push -u origin main
+✍️ Author: Ubuntu_Requests Assignment – Python Libraries
